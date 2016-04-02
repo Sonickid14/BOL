@@ -48,7 +48,7 @@ function IniMenu()
 
 
 Menu:addSubMenu("Key Config", "keys")
-	Menu.keys:addParam("combo", "Combo Key", SCRIPT_PARAM_ONKEYDOWN,false, string.byte("32"))
+	Menu.keys:addParam("combo", "Combo Key", SCRIPT_PARAM_ONKEYDOWN,false, string.byte(" "))
 	Menu.keys:addParam("harras", "Harras Key", SCRIPT_PARAM_ONKEYDOWN,false, string.byte("C"))
 	Menu.keys:addParam("laneclear", "Laneclear Key", SCRIPT_PARAM_ONKEYDOWN,false, string.byte("V"))
 	Menu.keys:addParam("lasthit", "lasthit Key", SCRIPT_PARAM_ONKEYDOWN,false, string.byte("X"))
