@@ -1,5 +1,5 @@
 --QWER - LeBlanc by Sonickid14
-if myHero.charName ~= "LeBlanc" then return end
+
 
 
 -- Downloads Nebelwoli's L33T UPL Prediction Manager--
@@ -20,26 +20,30 @@ function OnLoad()
 end 
  
 function IniMenu() 
-	Menu = scriptConfig("Sonickid14's - LeBlanc", "sonickid14's - LeBlanc") 
+	Menu = scriptConfig("Savage LeBlanc", "savage LeBlanc") 
 	Menu:addSubMenu("Q - Settings", "q")
-	Menu.q:addSubMenu("Harras", "c")
+	Menu.q:addSubMenu("Harras", "h")
 		Menu.q.h:addParam("use","Use in Harras", SCRIPT_PARAM_ONOFF, true)
-	Menu.q:addSubMenu("Combo", "32")
+	Menu.q:addSubMenu("Combo", "c")
 		Menu.q.c:addParam("use","Use in Combo", SCRIPT_PARAM_ONOFF, true)
 
 
 	Menu:addSubMenu("W - Settings", "w")
-	Menu.w:addSubMenu("Combo", "32")
+	Menu.w:addSubMenu("Harras", "h")
+		Menu.w.h:addParam("use","Use in Harras", SCRIPT_PARAM_ONOFF, true)
+	Menu.w:addSubMenu("Combo", "c")
 		Menu.w.c:addParam("use","Use in Combo", SCRIPT_PARAM_ONOFF, true)
 
 
 	Menu:addSubMenu("E - Settings", "e")
-	Menu.e:addSubMenu("Combo", "32")
+	Menu.e:addSubMenu("Harras", "h")
+		Menu.e.h:addParam("use","Use in Harras", SCRIPT_PARAM_ONOFF, true)
+	Menu.e:addSubMenu("Combo", "c")
 		Menu.e.c:addParam("use","Use in Combo", SCRIPT_PARAM_ONOFF, true)
 
 
 	Menu:addSubMenu("R - Settings", "r")
-	Menu.r:addSubMenu("Combo", "32")
+	Menu.r:addSubMenu("Combo", "c")
 		Menu.r.c:addParam("use","Use in Combo", SCRIPT_PARAM_ONOFF, true)
 
 
@@ -291,17 +295,3 @@ function CastR(t)
 		CastSpell(_R, target)
 	end
 end
-
-
-
-
---[[
-   ______          ________ _____         _____                           _               _              _____ __                 _      
-  / __ \ \        / /  ____|  __ \       / ____|                         | |             | |            / ____/_ |               | |     
- | |  | \ \  /\  / /| |__  | |__) |_____| |  __  ___ _ __   ___ _ __ __ _| |_ ___  _ __  | |__  _   _  | (___  | |_ __ ___  _ __ | | ___ 
- | |  | |\ \/  \/ / |  __| |  _  /______| | |_ |/ _ \ '_ \ / _ \ '__/ _` | __/ _ \| '__| | '_ \| | | |  \___ \ | | '_ ` _ \| '_ \| |/ _ \
- | |__| | \  /\  /  | |____| | \ \      | |__| |  __/ | | |  __/ | | (_| | || (_) | |    | |_) | |_| |  ____) || | | | | | | |_) | |  __/
-  \___\_\  \/  \/   |______|_|  \_\      \_____|\___|_| |_|\___|_|  \__,_|\__\___/|_|    |_.__/ \__, | |_____/ |_|_| |_| |_| .__/|_|\___|
-                                                                                                 __/ |                     | |           
-                                                                                                |___/                      |_|           
-]]--
